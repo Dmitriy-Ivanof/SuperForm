@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="index.js"></script>
+    <title>Elbrus Super Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="mainHeading">Elbrus Super Form</h1>
+      <main>
+        <div class="form">
+          <form>
+            <label for="name">Name</label>
+            <input placeholder="Имя" class="name" id="name" type="text" />
+
+            <label for="secondName">Second name</label>
+            <input
+              placeholder="Фамилия"
+              class="secondName"
+              id="secondName"
+              type="text"
+            />
+
+            <label for="email">Email</label>
+            <input
+              placeholder="Электронная почта"
+              required
+              type="email"
+              class="email"
+              id="email"
+            />
+
+            <label placeholder="Дата рождения" for="dateOfBirth"
+              >Date of birth</label
+            >
+            <input type="date" class="dateOfBirth" id="dateOfBirth" />
+
+            <label for="text">Text message</label>
+            <textarea
+              placeholder="Введите текст здесь"
+              type=" "
+              rows="7"
+              id="text"
+              class="text"
+            ></textarea>
+            <label for="checkbox"
+              ><input type="checkbox" class="checkbox" id="checkbox" />Consent
+              to the processing of personal data</label
+            >
+            <button class="btn">Отправить</button>
+          </form>
+          <button class="btn clear">Очистить localStorage</button>
+        </div>
+
+        <div class="mainUsers">
+          <h3>Users:</h3>
+          <div class="users"></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
