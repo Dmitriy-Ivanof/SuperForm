@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/tekstura.jpg);
+  font-family: "Roboto", sans-serif;
+  color: rgb(220, 153, 153);
+  font-style: italic;
+}
+
+.container {
+  margin: 0 20px;
+}
+p {
+  word-wrap: break-word;
+  width: 350px;
+  margin-left: 10px;
+}
+h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+h3 {
+  font-size: 23px;
+  margin: 20px 0 20px 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+label {
+  display: flex;
+  margin: 10px;
+}
+.name,
+.secondName,
+.email,
+.dateOfBirth {
+  display: block;
+  border: none;
+  height: 30px;
+  color: rgb(220, 153, 153);
+  background: transparent;
+  border-bottom: 1px solid rgb(171, 158, 158);
+  outline: none;
+  min-width: 330px;
+}
+textarea {
+  background: transparent;
+  color: rgb(220, 153, 153);
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid rgb(182, 177, 177);
+  padding: 10px;
+  min-width: 330px;
+}
+input:not(:last-child) {
+  margin-bottom: 10px;
+}
+#checkbox {
+  margin: 3px 20px 20px 40px;
+}
+
+.btn {
+  height: 40px;
+  background: none;
+  border: none;
+  outline: 1px solid rgb(182, 177, 177);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(220, 153, 153);
+  font-style: italic;
+  cursor: pointer;
+  min-width: 330px;
+}
+.btn:hover {
+  box-shadow: 1px 2px 2px 1px white;
+  transform: scale(1.02);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.clear {
+  outline: 1px solid rgb(182, 177, 177);
+  width: 50vw;
+  font-family: "Roboto", sans-serif;
+  color: rgb(220, 153, 153);
+  font-style: italic;
+}
+
+.mainUsers {
+  display: flex;
+  flex-direction: column;
+}
+
+.users {
+  width: 40vw;
+  background: none;
+}
+
+.user {
+  width: 40vw;
+  margin-bottom: 10px;
+  background: none;
+  outline: 1px solid rgb(182, 177, 177);
+  border-radius: 10px;
+  min-width: 330px;
+}
+
+.user-outer {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete,
+.change {
+  border: none;
+  height: 35px;
+  width: 100px;
+  color: none;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: none;
+  outline: 1px solid rgb(182, 177, 177);
+  font-family: inherit;
+  color: rgb(220, 153, 153);
+  font-style: italic;
+  cursor: pointer;
+}
+.delete:hover,
+.change:hover {
+  box-shadow: 1px 2px 2px 1px white;
+  transform: scale(1.02);
+}
+.delete:active,
+.change:active {
+  transform: scale(0.98);
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  p {
+    width: 210px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    width: 200px;
+  }
+}
